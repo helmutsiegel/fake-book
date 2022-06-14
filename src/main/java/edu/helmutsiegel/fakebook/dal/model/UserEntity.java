@@ -25,6 +25,10 @@ public class UserEntity {
         this.email = email;
     }
 
+    public UserEntity() {
+        // no-args constructor
+    }
+
     public Long getId() {
         return id;
     }
