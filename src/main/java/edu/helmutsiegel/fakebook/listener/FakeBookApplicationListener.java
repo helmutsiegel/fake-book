@@ -30,6 +30,9 @@ public class FakeBookApplicationListener implements ApplicationListener<Applicat
         UserEntity bill = new UserEntity("Bill", "Gates", "bill.gates@fakebook.com");
         userJpaRepository.saveAndFlush(bill);
 
+        UserEntity elon = new UserEntity("Elon", "Musk", "elon.musk@fakebook.com");
+        userJpaRepository.saveAndFlush(elon);
+
         PostEntity billsPost1 = new PostEntity("Is Microsoft better than Apple?", "Yes!", bill);
         postJpaRepository.saveAndFlush(billsPost1);
     }
